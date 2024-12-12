@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <body>
     <div class="toppage">
         <img src="" alt="logo">
-    <!--Barre de navigation-->
+    <!--Barre de navigation--!>
         <nav>
             <a>Qui je suis ?</a>
             <a>Compétence</a>
@@ -26,5 +26,81 @@
             <p>autre test pour un petit peu de texte</p>
         </div>
     </section>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de [Votre Nom], développeur web">
+    <title>[Votre Nom] - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="logo">
+            <h1>[Votre Nom]</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- À propos -->
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Je suis un développeur web passionné par la création de sites modernes et interactifs. J'aime relever des défis techniques et apprendre de nouvelles compétences.</p>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-gallery">
+            <div class="project-card">
+                <img src="projet1.jpg" alt="Projet 1">
+                <h3>Nom du Projet 1</h3>
+                <p>Description du projet 1...</p>
+            </div>
+            <div class="project-card">
+                <img src="projet2.jpg" alt="Projet 2">
+                <h3>Nom du Projet 2</h3>
+                <p>Description du projet 2...</p>
+            </div>
+            <div class="project-card">
+                <img src="projet3.jpg" alt="Projet 3">
+                <h3>Nom du Projet 3</h3>
+                <p>Description du projet 3...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 [Votre Nom] - Tous droits réservés</p>
+    </footer>
 </body>
 </html>
