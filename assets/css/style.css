@@ -3,9 +3,9 @@
 @import url(./navbar.css);
 
 main .socials {
-    z-index: -1;
-    position: absolute;
-    top: 0;
+    z-index: 999;
+    position: fixed;
+    top: 80px;
     right: 10px;
     display: flex;
     gap: 5px;
@@ -26,4 +26,53 @@ main .socials a {
 
 main .socials a:hover {
     height: 40px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+section#home {
+    height: calc(100dvh - 80px);
+    justify-content: center;
+    gap: 35px;
+}
+
+section#home h1 {
+    font-size: 30px;
+}
+
+section#home a {
+    padding: 10px 30px;
+    background: var(--c-primary-color);
+    border-radius: 6px;
+    color: var(--c-white);
+    font-size: 20px;
+    position: relative;
+    transition: all 300ms ease;
+    z-index: 1;
+}
+
+section#home a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+    background: var(--c-secondary-color);
+    z-index: -1;
+    transition: all 300ms ease;
+}
+
+section#home a:hover::after {
+    width: 100%;
+    transition: all 500ms ease;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }

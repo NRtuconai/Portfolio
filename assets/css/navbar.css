@@ -1,4 +1,5 @@
 header {
+    z-index: 999;
     position: fixed;
     top: 0;
     width: 100%;
@@ -7,6 +8,7 @@ header {
     justify-content: center;
     align-items: center;
     background: var(--c-white);
+    border-bottom: solid 1px var(--c-background);
 }
 
 header nav {
@@ -18,25 +20,21 @@ header nav {
     padding: 1rem;
 }
 
-header nav ul {
+header nav .navigation {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-header nav ul li {
+header nav .navigation a {
     position: relative;
     padding: 10px 15px;
-    z-index: 5;
+    z-index: 1;
     color: var(--c-text-color);
     transition: color 300ms ease;
 }
 
-header nav ul li a {
-    color: inherit;
-}
-
-header nav ul li::after {
+header nav .navigation a::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -50,11 +48,11 @@ header nav ul li::after {
     z-index: -1;
 }
 
-header nav ul li:hover {
+header nav .navigation a:hover {
     color: var(--c-white);
 }
 
-header nav ul li:hover::after {
+header nav .navigation a:hover::after {
     width: 100%;
 }
 
@@ -105,8 +103,7 @@ header nav .burger {
 }
 
 @media(max-width: 800px) {
-    header nav ul {
-        z-index: 99;
+    header nav .navigation {
         position: fixed;
         top: 80px;
         left: 0;
@@ -117,10 +114,10 @@ header nav .burger {
         flex-direction: column;
         justify-content: center;
         background: var(--c-white);
-        transition: all 500ms ease;
+        transition: height 500ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
     }
 
-    #burger:checked + ul {
+    #burger:checked ~ .navigation {
         height: calc(100% - 80px);
         opacity: 1;
         visibility: visible;
