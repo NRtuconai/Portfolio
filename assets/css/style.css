@@ -76,3 +76,33 @@ section#home a:hover::after {
     transition: all 500ms ease;
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
+
+.biomediff {
+    width: 100%;
+    height: 3px;
+    background-color: var(--c-primary-color);
+    margin: 75px 0;
+    border-radius: 6px;
+}
+
+section#stage h1 {
+    font-size: 30px;
+}
+
+section#stage div#stage1-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#stage div#stage1-2 div#stage1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#stage div#stage1-2 div#stage2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
