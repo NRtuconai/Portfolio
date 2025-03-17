@@ -82,7 +82,6 @@ section#home a:hover::after {
     height: 3px;
     background-color: var(--c-primary-color);
     margin: 75px 0;
-    border-radius: 6px;
 }
 
 section#stage h1 {
