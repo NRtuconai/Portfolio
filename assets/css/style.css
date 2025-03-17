@@ -88,20 +88,18 @@ section#stage h1 {
     font-size: 30px;
 }
 
-section#stage div#stage1-2 {
+.fleximg {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-section#stage div#stage1-2 div#stage1 {
+.fleximg .titimg {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section#stage div#stage1-2 div#stage2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.fleximg .titimg img {
+    width: 150px;
 }
