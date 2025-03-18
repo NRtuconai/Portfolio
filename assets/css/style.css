@@ -86,6 +86,7 @@ section#home a:hover::after {
 
 section#stage h1 {
     font-size: 30px;
+    margin-bottom: 50px;
 }
 
 .fleximg {
@@ -102,4 +103,13 @@ section#stage h1 {
 
 .fleximg .titimg img {
     width: 150px;
+    margin-top: 20px;
+}
+
+.fleximg .titimg .flexlink a{
+    display: flex;
+}
+
+section#realisation h1 {
+    margin-bottom: 50px;
 }
