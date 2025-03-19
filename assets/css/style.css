@@ -1,6 +1,40 @@
 @import url(./init.css);
 @import url(./footer.css);
 @import url(./navbar.css);
+@import url(./realisations.css);
+@import url(./modal.css);
+
+.btn {
+    padding: 15px 30px;
+    width: max-content;
+    background: var(--c-primary-color);
+    border-radius: 6px;
+    color: var(--c-white);
+    font-size: 20px;
+    position: relative;
+    transition: all 300ms ease;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+    background: var(--c-secondary-color);
+    z-index: -1;
+    transition: all 300ms ease;
+}
+
+.btn:hover::after {
+    width: 100%;
+    transition: all 500ms ease;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
 
 main .socials {
     z-index: 999;
@@ -36,17 +70,15 @@ section {
     align-items: center;
     height: 100%;
     padding: 1rem;
+    font-size: 20px;
+    color: var(--c-text-muted);
 }
 
-section#home {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 700px;
-    height: calc(100dvh - 80px);
-    justify-content: center;
-    gap: 35px;
-    text-align: center;
+section h1 {
+    color: var(--c-text-color);
+    font-size: 35px;
 }
+
 
 section:not(#home) h1 {
     position: relative;
@@ -66,93 +98,12 @@ section:not(#home) h1::after {
     border-radius: 20px;
 }
 
-section#home h1 {
-    font-size: 35px;
-}
-
-section#home p {
-    font-size: 20px;
-    color: var(--c-text-muted);
-}
-
-section#home a {
-    padding: 15px 30px;
-    background: var(--c-primary-color);
-    border-radius: 6px;
-    color: var(--c-white);
-    font-size: 20px;
-    position: relative;
-    transition: all 300ms ease;
-    z-index: 1;
-}
-
-section#home a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-radius: 6px;
-    background: var(--c-secondary-color);
-    z-index: -1;
-    transition: all 300ms ease;
-}
-
-section#home a:hover::after {
+section#home {
+    margin: 0 auto;
     width: 100%;
-    transition: all 500ms ease;
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-
-.biomediff {
-    width: 100%;
-    height: 3px;
-    background-color: var(--c-primary-color);
-    margin: 75px 0;
-}
-
-section#stage h1 {
-    font-size: 30px;
-    margin-bottom: 50px;
-}
-
-section#stage p {
-    font-size: 19px;
-}
-
-.fleximg {
-    display: flex;
-    align-items: center;
-}
-
-.fleximg .titimg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: var(--c-carte-color);
-    border-radius: 10px;
-    gap: 50px;
-}
-
-.fleximg .titimg img {
-    width: 200px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.fleximg .titimg .flexlink a {
-    display: flex;
-    font-size: 5px;
-}
-
-.titimg:hover {
-    transform: scale(106%);
-    transition: 1s;
-}
-
-section#realisation h1 {
-    margin-bottom: 50px;
+    max-width: 700px;
+    height: calc(100dvh - 80px);
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
 }
