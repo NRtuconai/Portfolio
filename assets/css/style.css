@@ -132,17 +132,25 @@ section#stage p {
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: aqua;
+    background-color: var(--c-carte-color);
     border-radius: 10px;
+    gap: 50px;
 }
 
 .fleximg .titimg img {
-    width: 150px;
+    width: 200px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .fleximg .titimg .flexlink a {
     display: flex;
+    font-size: 5px;
+}
+
+.titimg:hover {
+    transform: scale(106%);
+    transition: 1s;
 }
 
 section#realisation h1 {
