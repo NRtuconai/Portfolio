@@ -58,11 +58,11 @@
         <section id="stage">
             <h1>Entreprises</h1>
             <p>Au cours de ma formation du BTS SIO, j'ai dû participer à des stages sur une durée totale de 10 semaines
-                sur mes deux années de formation.</p>
-            <p>Elles m'ont permis de mettre en pratique ce que j'ai appris, ainsi de les renforcer et d'en apprendre des
+                sur mes deux années de formation.<br>
+            Elles m'ont permis de mettre en pratique ce que j'ai appris, ainsi de les renforcer et d'en apprendre des
                 nouvelles.</p>
-            <div class="fleximg">
-                <div class="titimg">
+            <div class="flexcarte">
+                <div class="fleximg">
                     <h3>Mairie de Cambrai</h3>
                     <a href="assets/pages/stage/mairiecambrai.html">
                         <img src="assets/img/stage/mairie/logomairie.png" alt="Marie de Cambrai image">
@@ -77,8 +77,9 @@
                             <p>Site internet de la ville de Cambrai</p>
                         </a>
                     </div>
+                    <p>Lieu stage</p>
                 </div>
-                <div class="titimg">
+                <div class="fleximg">
                     <h3>Neoteams</h3>
                     <a href="assets/pages/stage/neoteams.html">
                         <img src="assets/img/stage/neoteams/neoteams_logo.jpg" alt="neoteams.io image">
@@ -93,6 +94,7 @@
                             <p>Site internet de Neoteams.io</p>
                         </a>
                     </div>
+                    <p>lieu stage</p>
                 </div>
             </div>
         </section>
@@ -107,8 +109,7 @@
                         <div class="technos">
                             <p>GLPI</p>
                         </div>
-                        <p>Cette section est réservé pour l'aide aux utilisateurs
-                        </p>
+                        <p>Cette section est réservé pour l'aide aux utilisateurs</p>
                         <a class="btn goToProject" data-target="aide-aux-utilisateurs">Voir la réalisation</a>
                     </div>
                 </div>
@@ -126,7 +127,34 @@
                         <a class="btn goToProject" data-target="mise-en-place-de-serveur">Voir la réalisation</a>
                     </div>
                 </div>
+                <div class="realisation">
+                    <img src="./assets/img/realisation/icone_gestion.png" alt="">
+                    <div class="description">
+                        <h3>Gestion de projets</h3>
+                        <div class="technos">
+                            <p>DISCORD</p>
+                            <p>MOODLE</p>
+                        </div>
+                        <p>Cette section est réservé pour la gestion de projets</p>
+                        <a class="btn goToProject" data-target="gestion-projet">Voir la réalisation</a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="Certifications">
+            <h1>Certifications</h1>
+            <p>Partie réservé aux certifications obtenu</p>
+            <div class="flexcarte">
+                <div class="fleximg">
+                    <h3>MOOC de L'ANSSI</h3>
+                    <a href="">
+                        <img src="assets/img/certification/ANSSI_Logo.svg" alt="Marie de Cambrai image" width="150px">
+                    </a>
+                    <div class="flexlink">
+                        <a class="btn" href="assets/img/CV_en_ligne.pdf" download="CV_TRIOUX-Remy">Télécharger l'attestation</a>
+                    </div>
+                </div>
         </section>
     </main>
     <footer></footer>
@@ -145,6 +173,16 @@
         <div class="header">
             <h3>Mise en place de serveur / service</h3>
             <span onclick="disableModal('mise-en-place-de-serveur')" class="material-symbols-rounded close_modal">X</span>
+        </div>
+        <div class="body">
+            Contenu
+        </div>
+    </div>
+
+    <div class="modal" id="gestion-projet">
+        <div class="header">
+            <h3>Gestion de projets</h3>
+            <span onclick="disableModal('gestion-projet')" class="material-symbols-rounded close_modal">X</span>
         </div>
         <div class="body">
             Contenu

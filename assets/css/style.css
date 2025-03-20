@@ -107,3 +107,28 @@ section#home {
     gap: 35px;
     text-align: center;
 }
+
+.flexcarte {
+    display: flex;
+    align-items: center;
+}
+
+.fleximg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--c-white);
+    border-radius: 6px;
+    padding: 1rem;
+    gap: 3px;
+    box-shadow: -1px -1px 94px 14px rgba(75, 75, 75, 0.1);
+}
+
+.flexlink a {
+    display: flex;
+}
+
+footer {
+    background-color: var(--c-primary-color);
+}
