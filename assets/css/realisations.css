@@ -18,14 +18,14 @@
     display: flex;
     gap: 30px;
     align-items: center;
-    box-shadow: -1px -1px 94px 14px rgba(75, 75, 75, 0.1);
+    box-shadow: var(--c-shadow);
 }
 
 .realisation img {
     object-fit: cover;
     width: 100%;
-    max-width: 400px;
-    min-width: 250px;
+    max-width: 350px;
+    min-width: 200px;
     height: 100%;
     border-radius: 6px;
 }
@@ -66,6 +66,7 @@
 }
 
 .realisation .description a {
+    margin-top: auto;
     padding: 8px 10px;
 }
 

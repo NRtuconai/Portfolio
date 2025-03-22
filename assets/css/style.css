@@ -1,6 +1,7 @@
 @import url(./init.css);
 @import url(./footer.css);
 @import url(./navbar.css);
+@import url(./card.css);
 @import url(./realisations.css);
 @import url(./modal.css);
 
@@ -63,30 +64,28 @@ main .socials a:hover {
 }
 
 section {
-    margin: 50px auto 0;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 100%;
-    padding: 1rem;
-    font-size: 20px;
-    color: var(--c-text-muted);
 }
 
-section h1 {
-    color: var(--c-text-color);
-    font-size: 35px;
+section .heading {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
 }
 
-
-section:not(#home) h1 {
+section .heading h1, section .heading h2 {
     position: relative;
-    text-transform: uppercase;
-    font-size: 30px;
+    font-size: 35px;
+    color: var(--c-title-color);
 }
 
-section:not(#home) h1::after {
+section .heading h2::after {
     content: '';
     position: absolute;
     bottom: -7px;
@@ -98,6 +97,12 @@ section:not(#home) h1::after {
     border-radius: 20px;
 }
 
+section .heading p {
+    text-align: center;
+    font-size: 20px;
+    max-width: 1000px;
+}
+
 section#home {
     margin: 0 auto;
     width: 100%;
@@ -106,29 +111,4 @@ section#home {
     justify-content: center;
     gap: 35px;
     text-align: center;
-}
-
-.flexcarte {
-    display: flex;
-    align-items: center;
-}
-
-.fleximg {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--c-white);
-    border-radius: 6px;
-    padding: 1rem;
-    gap: 3px;
-    box-shadow: -1px -1px 94px 14px rgba(75, 75, 75, 0.1);
-}
-
-.flexlink a {
-    display: flex;
-}
-
-footer {
-    background-color: var(--c-primary-color);
 }

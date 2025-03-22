@@ -1,0 +1,70 @@
+.stages {
+    margin: 30px auto 0;
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.stages .stage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--c-stage-color);
+    box-shadow: var(--c-shadow);
+}
+
+.stages .stage img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.stages .stage h3 {
+    color: var(--c-title-color);
+    font-size: 20px;
+}
+
+.stages .stage .footer {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.stages .stage .footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.stages .stage .footer a {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 10px;
+    background: var(--c-primary-color);
+    color: var(--c-white);
+    transition: transform 200ms ease;
+}
+
+.stages .stage .footer a.external_link {
+    width: 50px;
+    height: 50px;
+    background: var(--c-secondary-color);
+}
+
+.stages .stage .footer a:hover {
+    background: var(--c-primary-color);
+    transform: translateY(-2px);
+}
