@@ -1,13 +1,13 @@
 .modal {
     z-index: 999;
     position: fixed;
-    top: 100px;
+    top: 125px;
     left: 50%;
     display: none;
     flex-direction: column;
     width: calc(100% - 2rem);
     max-width: 1400px;
-    height: calc(100dvh - 100px - 1rem);
+    height: calc(100dvh - 150px - 1rem);
     background: var(--c-card-color);
     border-radius: 6px;
     border: solid 2px var(--c-text-grey);

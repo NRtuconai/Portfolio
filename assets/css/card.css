@@ -1,4 +1,4 @@
-.stages {
+.cards {
     margin: 30px auto 0;
     width: 100%;
     display: grid;
@@ -6,30 +6,47 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.stages .stage {
+.cards .card {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
     padding: 1rem;
     border-radius: 10px;
-    background-color: var(--c-stage-color);
+    background-color: var(--c-card-color);
     box-shadow: var(--c-shadow);
 }
 
-.stages .stage img {
+.cards .card img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.stages .stage h3 {
+.cards .card h3 {
     color: var(--c-title-color);
     font-size: 20px;
 }
 
-.stages .stage .footer {
+.cards .card .technos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cards .card .technos p {
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: var(--c-primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.cards .card .footer {
     margin-top: auto;
     display: flex;
     width: 100%;
@@ -39,14 +56,14 @@
     gap: 20px;
 }
 
-.stages .stage .footer .links {
+.cards .card .footer .links {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
 
-.stages .stage .footer a {
+.cards .card .footer a {
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -58,13 +75,13 @@
     transition: transform 200ms ease;
 }
 
-.stages .stage .footer a.external_link {
+.cards .card .footer a.external_link {
     width: 50px;
     height: 50px;
     background: var(--c-secondary-color);
 }
 
-.stages .stage .footer a:hover {
+.cards .card .footer a:hover {
     background: var(--c-primary-color);
     transform: translateY(-2px);
 }

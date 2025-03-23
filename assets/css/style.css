@@ -2,7 +2,6 @@
 @import url(./footer.css);
 @import url(./navbar.css);
 @import url(./card.css);
-@import url(./realisations.css);
 @import url(./modal.css);
 
 .btn {
@@ -16,6 +15,7 @@
     transition: all 300ms ease;
     z-index: 1;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .btn::after {
@@ -25,7 +25,6 @@
     left: 0;
     width: 0;
     height: 100%;
-    border-radius: 6px;
     background: var(--c-secondary-color);
     z-index: -1;
     transition: all 300ms ease;
