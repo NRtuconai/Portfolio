@@ -105,9 +105,89 @@ section .heading p {
 section#home {
     margin: 0 auto;
     width: 100%;
-    max-width: 700px;
-    height: calc(100dvh - 80px);
-    justify-content: center;
+    flex-direction: row;
+    min-height: calc(100dvh - 80px);
+    justify-content: space-between;
     gap: 35px;
     text-align: center;
+}
+
+section#home .parcours_sco {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.parcours_sco hr {
+    width: 5px;
+    height: auto;
+    background: var(--c-secondary-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.parcours_sco .parcours_liste {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.parcours_liste .parcours {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.parcours_liste .parcours span.dot {
+    position: absolute;
+    left: 0;
+    transform: translate(-32.52px, 15px);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: var(--c-primary-color);
+    outline: solid 3px var(--c-primary-color);
+    outline-offset: 3px;
+}
+
+.parcours_liste .parcours .header {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.parcours_liste .parcours img {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+
+.parcours_liste .parcours h2 {
+    color: var(--c-title-color);
+}
+
+.parcours_liste .parcours .body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.parcours_liste .parcours .body span {
+    color: var(--c-text-grey);
+    font-size: 14px;
+}
+
+@media(max-width:860px) {
+    section#home {
+        flex-direction: column;
+    }
+
+    section#home .parcours_sco {
+        max-width: 500px;
+    }
 }

@@ -23,7 +23,7 @@ body.modal_active {
     --c-secondary-color: #31393C;
     --c-title-color: #1b1c1d;
     --c-text-color: #616161;
-    --c-text-grey: #cecece;
+    --c-text-grey: #bebebe;
     --c-card-color: #f3f3f3;
 
     --c-background: #EFF2F1;
@@ -42,7 +42,7 @@ body {
 main {
     margin: 80px auto 0;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     min-height: calc(100dvh - 80px);
     height: 100%;
     display: flex;
