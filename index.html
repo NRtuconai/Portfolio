@@ -52,7 +52,7 @@
                 <h1>Rémy Trioux 👋</h1>
                 <p>Je suis un étudiant du Lycée Henri Wallon en BTS services informatiques aux organisations option A
                     solutions d'infrastructure, systèmes et réseaux</p>
-                <a class="btn" href="assets/img/CV_en_ligne.pdf" download="CV_TRIOUX-Remy">Télécharger mon CV</a>
+                <a class="btn" href="assets/img/CV_en_ligne.pdf" download="CV_TRIOUX-Remy">Voir mon CV</a>
             </div>
             <div class="parcours_sco">
                 <hr>
@@ -513,18 +513,28 @@
         </div>
         <div class="body">
             <h4>Pourquoi ?</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus possimus et placeat doloribus, recusandae corporis neque nam. Corrupti, molestias enim laudantium ex, necessitatibus cum eius deserunt eos doloribus eveniet optio.</p>
+            <p>Une solution de monitoring permet garantir la disponibilité, la performance et la sécurité des systèmes informatiques, en détectant les anomalies rapidement et en permettant une intervention proactive pour éviter les pannes.</p>
             <h4>Comment ?</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero repellendus rem culpa magnam repellat, fugiat fuga esse, ullam fugit maiores tenetur vel eveniet pariatur eos laudantium cupiditate officia, sapiente laboriosam.</p>
-            <h4>Intallation client Zabbix sur les serveurs Proxmox</h4>
+            <p>Grâce à la mise en place d'une suite de logiciels pour récupérer les informations systèmes : Utilisation de la RAM, la charge réseau, l'état des machines virtuelle dans le cas de monitorer un proxmox,... (métriques) et bien sûr de quoi visualiser ces données</p>
+            
+            <h4>Intallation de l'agent Zabbix sur les serveurs Proxmox</h4>
+            <p>L'agent Zabbix servira de capteur pour collecter les données sur létat et la performance de ces serveurs</p>
             <img src="assets/img/realisation/preuve-e5-monitoring/proxXzabbix.png" alt="">
-            <img src="assets/img/realisation/preuve-e5-monitoring/api.webp" alt="">
 
             <hr>
 
             <h4>Récupération des métriques Proxmox sur le serveur Zabbix</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt, sed veniam ipsum aliquam culpa.</p>
+            <p>Pour récupérer ces métriques, on aura besoin de lier les agents au serveur Zabbix. Grâce à un utilisateur crées pour chaque serveurs Proxmox, on peut générer un jeton API pour creer une connexion sécurisée entre les agents et le serveur</p>
+            <p>Après ceci, sur le serveur Zabbix on utilise un modèle appeler "Proxmox VE by HTTP", il utilise l'API REST de Proxmox pour collecter des métriques détaillées.</p>
+            <p>On ajoute les hôtes Proxmox dans Zabbix, grâce au jeton API et la configuration des macros nécessaires</p>
             <img src="assets/img/realisation/preuve-e5-monitoring/proxmoxXzabbixserver.png" alt="">
+            <img src="assets/img/realisation/preuve-e5-monitoring/api.webp" alt="">
+
+            <hr>
+
+            <h4>Ajout d'une suite pour visualiser les métriques</h4>
+            <img src="assets/img/realisation/preuve-e5-monitoring/explication_final.png" alt="">
+            <hr>
         </div>
     </div>
 
@@ -541,9 +551,9 @@
         </div>
         <div class="body">
             <h4>Pourquoi ?</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus possimus et placeat doloribus, recusandae corporis neque nam. Corrupti, molestias enim laudantium ex, necessitatibus cum eius deserunt eos doloribus eveniet optio.</p>
+            <p></p>
             <h4>Comment ?</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero repellendus rem culpa magnam repellat, fugiat fuga esse, ullam fugit maiores tenetur vel eveniet pariatur eos laudantium cupiditate officia, sapiente laboriosam.</p>
+            <p></p>
             <h4>Configuration de règle de filtrage avec des consignes imposés</h4>
             <img src="assets/img/realisation/preuve-e5-firewall/opnsensedemande.png" alt="">
             <img src="assets/img/realisation/preuve-e5-firewall/opnsenseregleDMZ1.png" alt="">
